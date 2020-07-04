@@ -63,13 +63,13 @@ for con in contours:
 
 ![imagen_final](imagenes/imagenes_prueba1/test.jpg)
 
-![imagen_final](imagenes/imagenes_prueba1/test4.jpg)
+![imagen_final1](imagenes/imagenes_prueba1/test4.jpg)
 
 Como se ve en la siguiente imagen se necesita algún ajuste
 
-![imagen_final](imagenes/imagenes_prueba1/test5.jpg)
+![imagen_final2](imagenes/imagenes_prueba1/test5.jpg)
 
-![imagen_final](imagenes/imagenes_prueba1/test6.jpg)
+![imagen_final3](imagenes/imagenes_prueba1/test6.jpg)
 
 Este es ejemplo utilizado
 ``` python
