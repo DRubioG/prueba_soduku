@@ -14,7 +14,8 @@ cv2.rectangle(imgthres, (1,1), (width-1, height-1), (255, 255, 255), 3) # elimin
 contours,hierarchy =cv2.findContours(imgthres, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE) #extraigo los contornos de la imagen del sudoku
 ```
 
-1. Primero se lee la imagen                         
+1. Primero se lee la imagen
+
 ![imagen](imagenes/test.png)
 2. Se reescala para hacer más facil el trabajo
 ![imagen](imagenes/imagenes_prueba1/reescalado.jpg)
