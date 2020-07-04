@@ -16,7 +16,10 @@ img=cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
 #cv2.drawContours(img, contours, -1, (255, 0,0))
 #cv2.imwrite("imagenes/imagenes_prueba1/contornos.jpg", img)
 areas=[]
+anchos=[]
+i=0
 numero=[]
+num=[]
 
 for con in contours:
     area=cv2.contourArea(con) #calculamos el area de cada contorno
@@ -28,7 +31,30 @@ for con in contours:
         media=cv2.mean(pru)[0] #calculamos la media de los pixeles de la imagen
         if  media < 254.9:
           numero.append(con)
+          #pru2=cv2.resize(pru, (300,300), interpolation=cv2.INTER_LINEAR)
+          #conN, hierN=cv2.findContours(pru, cv2.RETR_TREE, cv2.CHAIN_APPROX_NONE)
+         # pru=cv2.cvtColor(pru, cv2.COLOR_GRAY2BGR)
           cv2.rectangle(img, (x+4,y+4), (x+w-4, y+h-4), (255, 0, 255), 1)
-
+          #cv2.drawContours(pru, conN, -1, (0,200,0))
+          #cv2.imshow("pru", pru)
+         # cv2.waitKey(0)
+          #num.append(conN)
+          #for cont in conN:
+            #num.append(cont)
+            #print(cont[0])
+           # imgH=cv2.resize(img, (300*w,300*h), interpolation=cv2.INTER_LINEAR)
+          #  cv2.drawContours(img, cont+[x+4, y+4], -1, (255, 255,0), 1, 1)
+            #
+          
+          #cv2.drawContours(img, conN, i, (0,255,0), 1)
+           # i=i+1
+#for i in range(len(conN)):
+#print(len(num))
+#imgthres=cv2.cvtColor(imgthres, cv2.COLOR_GRAY2BGR)
+#cv2.drawContours(img, numero, -1, (0, 0,255), 1)
+#
+#imgH=cv2.resize(img, (300,300), interpolation=cv2.INTER_LINEAR)
 cv2.imshow("img", img)
+#cv2.imwrite("imagenes/imagenes_prueba1/sudoku_test6.jpg", img)
+#cv2.imshow("threshold", imgthres)
 cv2.waitKey(0)
