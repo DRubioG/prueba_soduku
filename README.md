@@ -61,15 +61,15 @@ for con in contours:
 8. Si el valor medio es menor de un valor que tomamos con margen, entonces significa que la casilla no es blanca del todo, por lo que puede contener un número, entonces lo guardamos en una lista llamada _numero_
 9. (opcional) Se pinta el contorno que contiene el número de otro color
 
-![imagen_final](imagenes/imagenes_prueba1/test.jpg)
+![imagen_final](imagenes/imagenes_prueba1/sudoku_test.jpg)
 
-![imagen_final1](imagenes/imagenes_prueba1/test4.jpg)
+![imagen_final1](imagenes/imagenes_prueba1/sudoku_test4.jpg)
 
 Como se ve en la siguiente imagen se necesita algún ajuste
 
-![imagen_final2](imagenes/imagenes_prueba1/test5.jpg)
+![imagen_final2](imagenes/imagenes_prueba1/sudoku_test5.jpg)
 
-![imagen_final3](imagenes/imagenes_prueba1/test6.jpg)
+![imagen_final3](imagenes/imagenes_prueba1/sudoku_test6.jpg)
 
 Este es ejemplo utilizado
 ``` python
