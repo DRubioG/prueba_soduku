@@ -18,12 +18,16 @@ contours,hierarchy =cv2.findContours(imgthres, cv2.RETR_TREE, cv2.CHAIN_APPROX_N
 
 ![imagen](imagenes/test.png)
 2. Se reescala para hacer más facil el trabajo
+
 ![imagen](imagenes/imagenes_prueba1/reescalado.jpg)
 3. Se aplica un threshold para eliminar impurezas en la imagen
+
 ![imagen](imagenes/imagenes_prueba1/threshold.jpg)
 4. Se superpone un rectangulo blanco son el sudoku para eliminar los margenes
+
 5. Se obtienen los contornos de la imagen
 ![imagen](imagenes/imagenes_prueba1/contornos.jpg)
+
 (Para poder ver las casillas se utiliza cambia la imagen original por una RGB)
 ```python
 img=cv2.cvtColor(img, cv2.COLOR_GRAY2BGR)
